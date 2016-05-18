@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#all {
+	width: 1000px;
+	height: 600px;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+#all div {
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	background-color: #999;
+}
+#all ol {
+	position: absolute;
+	left:0; /*初始化必须加，或者在js中添加*/
+	right: 30px;
+	bottom: 20px;
+}
+#all ol li {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 100%;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 20px;
+	_display: inline;
+	cursor: pointer;
+}
+#all ul {
+	left:0;
+	position: absolute;
+	overflow: hidden;
+}
+#all ol li.current {
+	background: #D3A061;
+}
+img {
+	width: 1000px;
+	height: 600px;
+	display: block;
+}
+#all ul li {
+	display: block;
+	width: 1000px;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+}
+#all a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	position: absolute;
+	top: 260px;
+	z-index: 10;
+	cursor: pointer;
+	
+
+}
+
+#left {
+	opacity:0.5;
+	background: url(../images/left.png) no-repeat center center;
+	background-color: #333;
+}
+
+#left:hover,#right:hover {
+	opacity:0.8
+}
+
+#right {
+	opacity:0.5;
+	background: url(../images/right.png) no-repeat center center;
+	background-color: #333;
+}
+
+#all .right {
+	right: 0;
+}

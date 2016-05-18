@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/deepSlide.css">
+</head>
+
+<body>
+	<div id="all">
+		<div>
+			<a id="left"></a><a id="right" class="right"></a>
+			<ul id="inner">
+				<li><img src="images/1.jpg"></li>
+				<li><img src="images/2.jpg"></li>
+				<li><img src="images/3.jpg"></li>
+				<li><img src="images/4.jpg"></li>
+				<li><img src="images/5.jpg"></li>
+			</ul>			
+			<ol>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+	</div>
+	
+	<!--[if lte IE 8]>
+	    <script src="../deep-ie8.js"></script>
+	<![endif]-->	
+	<script src="../deepEase.js"></script>
+	<script src="./js/deepSlide.js"></script>
+	<script>
+		var target = document.getElementById('all')
+		deepSlide({
+			content : target
+		})
+	</script>
+</body>
+</html>
